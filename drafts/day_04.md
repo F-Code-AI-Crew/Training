@@ -49,6 +49,10 @@ Further discuss
 - [ ] Vector and linear transformation in context of SVMs
 - [ ] Demonstration
 
+# Resources
+
+- [Latex notes](https://www.overleaf.com/read/wbxsxkbxqtjq#bd1c10) vì markdown viết ma trận gớm quá
+
 # References
 
 - [Deisenroth, 2020, MML](https://mml-book.com/)
