@@ -46,12 +46,12 @@ z = float(3)  # z will be 3.0
 ```
 
 # Data type
+Boolean Type:	`bool`  
 Text Type:	`str`  
 Numeric Types:	`int`, `float`, `complex`  
 Sequence Types:	`list`, `tuple`, `range`  
 Mapping Type:	`dict`  
-Set Types:	`set`, `frozenset`
-Boolean Type:	`bool`
+Set Types:	`set`, `frozenset`    
 Binary Types:	`bytes`, `bytearray`, `memoryview`  
 
 # Numeric Expressions
