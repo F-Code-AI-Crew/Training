@@ -48,6 +48,50 @@ Gaussian elimination is a method that transforms the system into an upper triang
    
    - Once the matrix is in upper triangular form, the system can be solved efficiently by back-substituting from the last row upward.
 
+## Determinant of a Matrix
+The determinant of a square matrix \(A\) is a scalar value that provides important properties of the matrix. It is denoted as \( \det(A) \) or \(|A|\) and is computed recursively:
+
+For a \(2 \times 2\) matrix:
+
+```math
+\det \begin{bmatrix} a & b \\ c & d \end{bmatrix} = ad - bc
+```
+
+For larger matrices, the determinant is calculated using cofactor expansion or row reduction.
+
+## Transpose of a Matrix
+The transpose of a matrix \(A\), denoted by \(A^T\), is obtained by swapping its rows and columns:
+
+```math
+(A^T)_{ij} = A_{ji}
+```
+
+Example:
+
+```math
+A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix},
+A^T = \begin{bmatrix} 1 & 4 \\ 2 & 5 \\ 3 & 6 \end{bmatrix}
+```
+
+## Inverse of a Matrix
+The inverse of a square matrix \(A\), denoted as \(A^{-1}\), is the matrix that satisfies:
+
+```math
+A \cdot A^{-1} = I
+```
+
+where \(I\) is the identity matrix. A matrix is invertible if and only if \( \det(A) \neq 0 \).
+
+The inverse can be found using:
+- Gaussian elimination (by augmenting with the identity matrix and reducing it)
+- The adjoint method:
+
+```math
+A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)
+```
+
+where \(\text{adj}(A)\) is the adjugate of \(A\).
+
 ## Example
 Solve the linear system:
 
