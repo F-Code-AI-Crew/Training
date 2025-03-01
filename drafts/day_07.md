@@ -1,5 +1,14 @@
 # Object-Oriented Programming (OOP) in Python
 
+Todo:
+- [ ] Property decorator in encapsulation
+- [ ] Update inheritance
+    - [ ] More types of inheritance
+    - [ ] MRO mechanism
+- [ ] Update better overiding example in polymorphism
+- [ ] Add data model
+- [ ] Add dunder methods
+
 ## Introduction
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code using objects and classes. Python fully supports OOP, enabling efficient code reuse and modularity.
 
@@ -24,7 +33,12 @@ car1.display_info()
 ```
 
 ### 2. **Encapsulation**
-Encapsulation is the practice of keeping data and methods together within a class while restricting direct access to internal variables.
+Encapsulation is the practice of keeping data and methods together within a class while restricting direct access to internal variables. The goal of encapsulation is to hide data and complexity.
+
+These are convention of access notation, although Python does not restrict access to these components.
+- Default access: `var`
+- Protected access: `_var`
+- Private access: `__var` (could be accessed by name mangling)
 
 #### Private and Public Attributes
 ```python
@@ -68,7 +82,7 @@ car1.display_info()
 ```
 
 ### 4. **Polymorphism**
-Polymorphism allows different classes to use the same method name but implement it differently.
+Polymorphism allows different classes to use the same method name but implement it differently, often in subclass inherited from one or multiple superclass. This could be achieved by overriding and overloading.
 
 #### Example of Polymorphism
 ```python
@@ -90,7 +104,7 @@ for animal in animals:
 ```
 
 ### 5. **Abstraction**
-Abstraction hides implementation details and only exposes essential functionality. In Python, we use abstract classes to enforce this concept.
+Abstraction hides implementation details and only exposes essential functionality. The goal of abstraction is to simplify objectives. In Python, we could use `abstract base class` mechanism to implement this concept.
 
 #### Example of Abstraction
 ```python
