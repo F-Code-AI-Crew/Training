@@ -63,6 +63,8 @@ This will open a new tab in your default web browser displaying your Streamlit a
 - `st.subheader("Subheader")` - Creates a subheader.
 - `st.write("Some text")` - Displays text or data.
 - `st.markdown("**Bold text**")` - Supports Markdown syntax.
+- `st.code("print(a + b)")` - Display a code block.
+- `st.html("<p>HTML code</p>")` - Insert HTML to your application.
 
 ### 🎛 Interactive Widgets
 
@@ -72,6 +74,7 @@ This will open a new tab in your default web browser displaying your Streamlit a
 - `st.selectbox("Select an option", ["Option 1", "Option 2"])` - Creates a dropdown.
 - `st.slider("Pick a number", 0, 100)` - Creates a slider.
 - `st.text_input("Enter text")` - Creates a text input field.
+- `st.numer_input("Label, min_value=0, max_value=10, step=1")` - Creates a number input field.
 
 ### 📊 Displaying Data
 
@@ -122,4 +125,5 @@ st.pyplot(fig)
 
 Streamlit is a powerful and user-friendly framework for developing interactive web applications, particularly for data science and machine learning. With its simple syntax and automatic UI generation, it significantly reduces the effort required to create web applications. By mastering Streamlit, developers can quickly prototype and deploy data-driven applications with ease.
 
-For further learning, refer to the official documentation: [🔗 Streamlit Docs](https://docs.streamlit.io/)
+For further learning, refer to the official documentation: [🔗 Streamlit Docs](https://docs.streamlit.io/)   
+For a concise overview, check out the cheat-sheet: [🔗 Streamlit Cheat Sheet](https://cheat-sheet.streamlit.app/)
