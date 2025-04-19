@@ -9,3 +9,5 @@ Day 1
     list
     numpy
     function
+    further
+    pset
