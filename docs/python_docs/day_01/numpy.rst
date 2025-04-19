@@ -42,19 +42,6 @@ This removes brightness bias and makes the data more stable and reliable for lea
     \text{normalized} = \frac{x - \text{mean}}{\text{std}}
 
 
-.. code-block:: python
-
-    import numpy as np
-
-    # Simulate an 1000x1000 image
-    image = np.random.rand(1000, 1000)
-
-    # Z-score normalization
-    mean = np.mean(image)
-    std = np.std(image)
-    normalized_image = (image - mean) / std
-
-    print("Mean after normalization:", np.mean(normalized_image))  
-    # Mean after normalization: -2.503490748040349e-16 ~0
-    print("Std after normalization:", np.std(normalized_image))    
-    # Std after normalization: 0.9999999999999998 ~1
+.. literalinclude:: scripts/numpy_example.py
+   :language: python
+   :linenos:
