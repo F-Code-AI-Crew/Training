@@ -52,7 +52,6 @@ Arithmetic
 ~~~~~~~~~~
 
 .. list-table::
-    :widths: 20 60
     :header-rows: 1
 
     * - Operator
@@ -74,7 +73,6 @@ Comparison
 ~~~~~~~~~~~
 
 .. list-table::
-    :widths: 20 60
     :header-rows: 1
 
     * - Operator
@@ -120,7 +118,6 @@ following categories:
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 60
 
    * - Category
      - Types
