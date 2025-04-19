@@ -1,4 +1,4 @@
-F-Code AI Crew Training documentation
+Crew Training
 ==========================================
 
 .. toctree::
