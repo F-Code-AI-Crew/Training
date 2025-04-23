@@ -2,7 +2,7 @@ Python
 ----------
 
 .. toctree::
-    :caption: Python
+    :caption: Contents
     :maxdepth: 2
 
     day_01/index

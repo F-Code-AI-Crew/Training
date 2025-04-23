@@ -7,5 +7,7 @@ Day 1
 
     variables
     list
-    function
     numpy
+    function
+    further
+    pset
