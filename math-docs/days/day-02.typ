@@ -1,1 +1,3 @@
-= Linear Systems, Matrices, and Gaussian Elimination
+= Linear Systems
+= Matrices
+= Gaussian Elimination
