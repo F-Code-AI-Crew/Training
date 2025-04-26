@@ -4,158 +4,116 @@ Problem set
 1. List operations
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. code-block:: text
     
-    def list_operations(fruits: list) -> dict:
-        """
-        Perform operations on a list of fruits.
+    .. literalinclude:: scripts/problem_set.py
+    :language: python
+    :start-after: # -- start list_operations --
+    :end-before: # -- end list_operations --
+    :linenos:
 
-        Parameters:
-            fruits (list): A list of fruit names.
+Input:
 
-        Returns:
-            dict: Results of various operations on the list.
-            - The entire list
-            - The first fruit
-            - The last fruit
-            - The middle three fruits
-            - The list in reverse order using slicing
-            - The sorted list
-        """
-        
-        # Your code here
-        return = {
-            "full_list":  ,
-            "first_fruit":  ,
-            "last_fruit":  ,
-            "middle_three":  ,
-            "reversed":  ,
-            "sorted":
-        }
+.. code-block:: python
 
 
-    # Test case
-    fruits = ['apple', 'cherry', 'orange', 'elderberry', 'banana']
-    print("List Operations:", list_operations(fruits))
+Output:
+
+.. code-block:: text
+
 
 2. List manipulation
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. code-block:: text
+    
+    .. literalinclude:: scripts/problem_set.py
+    :language: python
+    :start-after: # -- start modify_list --
+    :end-before: # -- end modify_list --
+    :linenos:
+
+Input:
+
 .. code-block:: python
 
-    def modify_list(fruits: list) -> dict:
-        """
-        Modify a list of fruits with common list operations.
 
-        Parameters:
-            fruits (list): A list of fruit names.
+Output:
 
-        Returns:
-            dict: The list after each modification step.
-            - Add 'lemon' to the list
-            - Insert 'strawberry' to the second index
-            - Remove one fruit from the list
-            - Delete one fruit from the fourth index
-        """
+.. code-block:: text
 
-        # Your code here
-        added = 
-        inserted =
-        removed = 
-        del_indexed =
 
-        return {
-            "added": added,
-            "inserted": inserted,
-            "removed": removed,
-            "del_indexed": del_indexed,
-        }
-
-    
-    # Test case
-    fruits = ['apple', 'cherry', 'orange', 'elderberry', 'banana']
-    print("Modified Lists:", modify_list(fruits))
-
-3. NumPy Exercises – Array Dimensions
+3. Create and reshape NumPy array
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. code-block:: text
+    
+    .. literalinclude:: scripts/problem_set.py
+    :language: python
+    :start-after: # -- start create_arrays --
+    :end-before: # -- end create_arrays --
+    :linenos:
+
+Input:
+
 .. code-block:: python
 
-    import numpy as np
-
-    def create_arrays() -> dict:
-        """
-        Create a 1D NumPy array with numbers from 1 to 12 and reshape the array into 2D and 3D forms.
-        
-        Returns:
-            dict: Contains 1D array, 2D array of shape (3,4), and 3D array of shape (2,2,3).
-        """
-
-        # Your code here
-        array_1d = 
-        array_2d = 
-        array_3d = 
-
-        return {
-            "1D": array_1d,
-            "2D": array_2d,
-            "3D": array_3d
-        }
-
-    def access_3d_elements(array_3d: np.ndarray) -> dict:
-        """
-        Access specific elements from a 3D NumPy array.
-
-        Parameters:
-            array_3d (np.ndarray): A 3-dimensional NumPy array.
-
-        Returns:
-            dict: Selected elements from the 3D array.
-            - The first 2D array
-            - The second row of the first 2D array
-            - The last element in the last 2D array
-        """
-
-        # Your code here
-        return {
-            "first_2D":  ,
-            "second_row_first_2D":  ,
-            "last_element_last_2D": 
-        }
-
-
-    # Test case
     arrays = create_arrays()
     print("Arrays:", arrays)
-    print("Accessed 3D Elements:", access_3d_elements(arrays["3D"]))
+
+Output:
+
+.. code-block:: text
 
 
-4. Arithmetic operations
+4. Access 3D NumPy array
 ~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: text
+    
+    .. literalinclude:: scripts/problem_set.py
+    :language: python
+    :start-after: # -- start access_3d_elements --
+    :end-before: # -- end access_3d_elements --
+    :linenos:
+
+Input:
 
 .. code-block:: python
 
-    def calculate(a: int, b: int) -> dict:
-        """
-        Perform arithmetic operations of two numbers.
+    array_3D = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+                [[10, 25, 6], [7, 8, 29], [15, 11, 52]],
+                [[82, 56, 100], [22, 24, 5], [99, 46, 12]],
+            ]
+    access_3d_elements(array_3D)
 
-        Parameters:
-            a (int): First number.
-            b (int): Second number.
+Output:
 
-        Returns:
-            dict: Results of addition, subtraction, multiplication, float division, and integer division.
-        """
+.. code-block:: text
 
-        # Your code here
-        return {
-            "add": ,
-            "subtract":  ,
-            "multiply":  ,
-            "float_divide":  ,
-            "int_divide":
-        } 
+    first_2D: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    second_row_first_2D: [4, 5, 6]
+    last_element_first_row_last_2D: 100
 
+5. Calculate the area of trapezoid
+~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: text
     
-    # Test case
-    print("Calculation:", calculate(10, 3))
+    .. literalinclude:: scripts/problem_set.py
+    :language: python
+    :start-after: # -- start calc_area_of_trapezoid --
+    :end-before: # -- end calc_area_of_trapezoid --
+    :linenos:
+
+Input:
+
+.. code-block:: python
+
+    calc_area_of_trapezoid(8, 16, 12)
+
+Output:
+
+.. code-block:: text
+
+    144
