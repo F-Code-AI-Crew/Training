@@ -16,11 +16,13 @@ Input:
 
 .. code-block:: python
 
+    print(list_operations([30, 20, 50, 40, 10]))
 
 Output:
 
 .. code-block:: text
 
+    {"first_number": 30, "last_number": 10, "reversed": [10, 40, 50, 20, 30], "sorted": [10, 20, 30, 40, 50]}
 
 2. List manipulation
 ~~~~~~~~~~~~~~~~~~~~~
@@ -36,37 +38,15 @@ Output:
 Input:
 
 .. code-block:: python
-
-
-Output:
-
-.. code-block:: text
-
-
-3. Create and reshape NumPy array
-~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: text
-    
-    .. literalinclude:: scripts/problem_set.py
-    :language: python
-    :start-after: # -- start create_arrays --
-    :end-before: # -- end create_arrays --
-    :linenos:
-
-Input:
-
-.. code-block:: python
-
-    arrays = create_arrays()
-    print("Arrays:", arrays)
+    print(modify_list([10, 20, 30, 40, 50]))
 
 Output:
 
 .. code-block:: text
 
+    [10, 20, "hello", 30, "lemon", "strawberry"]
 
-4. Access 3D NumPy array
+3. Access 3D NumPy array
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: text
@@ -81,21 +61,17 @@ Input:
 
 .. code-block:: python
 
-    array_3D = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]],
-                [[10, 25, 6], [7, 8, 29], [15, 11, 52]],
-                [[82, 56, 100], [22, 24, 5], [99, 46, 12]],
-            ]
+    array_3D = [[[1, 2, 3], [4, 5, 6]],
+                [[7, 8, 9], [10, 11, 12]]]
     access_3d_elements(array_3D)
 
 Output:
 
 .. code-block:: text
 
-    first_2D: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    second_row_first_2D: [4, 5, 6]
-    last_element_first_row_last_2D: 100
+    {"first_2D": [[1, 2, 3],[4, 5, 6]], "last_row_first_2D": [4, 5, 6], "last_element_first_row_last_2D": 9}
 
-5. Calculate the area of trapezoid
+4. Calculate the area of trapezoid
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: text
@@ -116,4 +92,4 @@ Output:
 
 .. code-block:: text
 
-    144
+    144.0
