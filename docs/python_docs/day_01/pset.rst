@@ -38,6 +38,7 @@ Output:
 Input:
 
 .. code-block:: python
+
     print(modify_list([10, 20, 30, 40, 50]))
 
 Output:
@@ -63,7 +64,7 @@ Input:
 
     array_3D = [[[1, 2, 3], [4, 5, 6]],
                 [[7, 8, 9], [10, 11, 12]]]
-    access_3d_elements(array_3D)
+    print(access_3d_elements(array_3D))
 
 Output:
 
@@ -86,7 +87,7 @@ Input:
 
 .. code-block:: python
 
-    calc_area_of_trapezoid(8, 16, 12)
+    print(calc_area_of_trapezoid(8, 16, 12))
 
 Output:
 
