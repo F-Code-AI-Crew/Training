@@ -112,17 +112,33 @@ def modify_list(my_list: list) -> list:
 # -- start access_3d_elements --
 def access_3d_elements(array_3d: list) -> dict:
     """
-    Access specific elements from a 3D NumPy array.
+    Access specific elements from a 3D array.
 
-    Parameters:
-        array_3d (list): A 3-dimensional array.
+    Parameters
+    ----------
+    array_3d: list
+        A 3-dimensional array.
 
-    Returns:
-        dict: Selected elements from the 3D array.
-        - The first 2D array
-        - The last row of the first 2D array
-        - The last element in the the first row of the last 2D array
+    Returns
+    -------
+    dict
+        Selected elements from the 3D array.
+        - The first 2D array.
+        - The last row of the first 2D array.
+        - The last element in the the first row of the last 2D array.
+
+    Examples
+    --------
+    >>> access_3d_elements([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+    {"first_2D": [[1, 2, 3],[4, 5, 6]], "last_row_first_2D": [4, 5, 6], "last_element_first_row_last_2D": 9}
+
+    Note
+    ----
+    - The first 2D array: [[1, 2, 3],[4, 5, 6]]
+    - The last row of the first 2D array: [4, 5, 6]
+    - The last element in the the first row of the last 2D array: 9
     """
+
     # Your code here
     return {
         "first_2D": None,
@@ -137,14 +153,30 @@ def calc_area_of_trapezoid(a: int, b: int, h: int) -> float:
     """
     Calculate the area of trapezoid.
 
-    Parameters:
-        a (int): Length of base 1.
-        b (int): Length of base 2.
-        h (int): Height of the trapezoid.
+    Parameters
+    ----------
+    a: int 
+        Length of base 1.
+    b: int
+        Length of base 2.
+    h: int
+        Height of trapezoid.
 
-    Returns:
-        float: Area of trapezoid
+    Returns
+    ----------
+    float
+        The area of trapezoid.
+
+    Examples
+    --------
+    >>> calc_area_of_trapezoid(8, 16, 12)
+    144.0
+
+    Note
+    ----
+    - Area = ((8 + 16) / 2) * 12 = 144.0
     """
+
     # Your code here
     return 0.
 # -- end calc_area_of_trapezoid --
