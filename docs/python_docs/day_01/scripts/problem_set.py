@@ -1,45 +1,111 @@
-# -- start list_operations --
-def list_operations(my_list: list) -> dict:
+# -- start get second last --
+def get_second_last(nums: list[float]) -> float:
     """
-    Perform operations on a list of numbers.
+    Get the 2nd last element of the list after some modifications.
 
-    Parameters:
-        my_list (list): A list of numbers with minimum three elements.
+    Parameters
+    ----------
+    nums : list of float
+        A list containing at least 3 real numbers.
 
-    Returns:
-        dict: Results of various operations on the list.
-        - The first number of the list
-        - The last number of the list
-        - The list in reverse order using slicing
-        - The sorted list
-    """   
-    # Your code here
-    return {
-        "first_number": ,
-        "last_number": ,
-        "reversed": ,
-        "sorted":
-        }
-# -- end list_operations --
+    Returns
+    -------
+    float
+        The second-to-last element after being increased by the average of the list,
+        raised to the power of 2, and rounded to 2 decimal places.
+
+    Examples
+    --------
+    >>> get_second_last([1.2, 3.4, 5.6, 7.8, 9.0])
+    174.24
+
+    Note
+    ----
+    - Average = (1.2+3.4+5.6+7.8+9.0)/5 = 5.4
+    - 2nd last = 7.8
+    - (7.8 + 5.4) = 13.2
+    - 13.2 ** 2 = 174.24
+    - round to 2 decimal places = 174.24
+    """
+    # Your code starts here
+    result: float = float("-inf")
+    # Your code ends here
+    return result
+# -- end get second last --
+
+
+# -- start get first three ---
+def get_first_three_reversed(nums: list[float]) -> list[float]:
+    """
+    Return the first three elements of the list in reverse order.
+
+    Parameters
+    ----------
+    nums : list of float
+        A list containing at least 3 real numbers.
+
+    Returns
+    -------
+    list of float
+        A new list containing the first three elements of `nums`, in reverse order.
+
+    Examples
+    --------
+    >>> get_first_three_reversed([10.0, 20.0, 30.0, 40.0, 50.0])
+    [30.0, 20.0, 10.0]
+
+    Note
+    ----
+    - Start: [10.0, 20.0, 30.0, 40.0, 50.0]
+    - Take the first three elements: [10.0, 20.0, 30.0]
+    - Reverse those elements: [30.0, 20.0, 10.0]
+    """
+    # Your code starts here
+    result: list[float] = []
+    # Your code ends here
+    return result
+# -- end get first three ---
 
 
 # -- start modify_list --
 def modify_list(my_list: list) -> list:
     """
-    Modify a list of numbers with common list operations.
+    Modify a list of elements by applying multiple list operations in sequence.
 
-    Parameters:
-        my_list (list): A list of numbers with minimum five elements.
+    Parameters
+    ----------
+    my_list : list
+        A list containing at least five elements.
 
-    Returns:
-        list: The updated list after modification.
-        - Remove one number from the end of the list
-        - Insert "hello" to index 2 of the list
-        - Add "lemon", "strawberry" to the end of the list
-        - Delete one number index 4 of the list
+    Returns
+    -------
+    list
+        The updated list after the following modifications:
+        - Remove the last element of the list.
+        - Insert the string "hello" at index 2.
+        - Extend the list by adding two new elements: "lemon" and "strawberry" at the end.
+        - Remove the element at index 4.
+        - Insert the number 99 at the beginning of the list (index 0).
+
+    Examples
+    --------
+    >>> modify_list([1, 2, 3, 4, 5, 6])
+    [99, 1, 2, 'hello', 4, 5, 'lemon', 'strawberry']
+
+    Note
+    ----
+    - Start: [1, 2, 3, 4, 5, 6]
+    - Remove last element (6): [1, 2, 3, 4, 5]
+    - Insert "hello" at index 2: [1, 2, 'hello', 3, 4, 5]
+    - Extend with ["lemon", "strawberry"]: [1, 2, 'hello', 3, 4, 5, 'lemon', 'strawberry']
+    - Remove element at index 4 (element 4): [1, 2, 'hello', 3, 5, 'lemon', 'strawberry']
+    - Insert 99 at beginning: [99, 1, 2, 'hello', 3, 5, 'lemon', 'strawberry']
     """
-    # Your code here
-    pass
+
+    # Your code starts here
+    result: list = []
+    # Your code ends here
+    return result
 # -- end modify_list --
 
 
@@ -59,9 +125,9 @@ def access_3d_elements(array_3d: list) -> dict:
     """
     # Your code here
     return {
-        "first_2D": ,
-        "last_row_first_2D": ,
-        "last_element_first_row_last_2D": 
+        "first_2D": None,
+        "last_row_first_2D": None,
+        "last_element_first_row_last_2D": None, 
     }
 # -- end access_3d_elements --
 
@@ -80,7 +146,7 @@ def calc_area_of_trapezoid(a: int, b: int, h: int) -> float:
         float: Area of trapezoid
     """
     # Your code here
-    pass
+    return 0.
 # -- end calc_area_of_trapezoid --
 
 

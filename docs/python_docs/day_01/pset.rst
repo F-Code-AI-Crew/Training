@@ -1,58 +1,26 @@
 Problem set
 -------------
 
-1. List operations
-~~~~~~~~~~~~~~~~~~~~~
+Get second last
+~~~~~~~~~~~~~~~~
 
-.. code-block:: text
-    
-    .. literalinclude:: scripts/problem_set.py
-    :language: python
-    :start-after: # -- start list_operations --
-    :end-before: # -- end list_operations --
-    :linenos:
+.. autofunction:: problem_set.get_second_last
 
-Input:
+Get first three reversed
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. autofunction:: problem_set.get_first_three_reversed
 
-    print(list_operations([30, 20, 50, 40, 10]))
+Modify list
+~~~~~~~~~~~
 
-Output:
+.. autofunction:: problem_set.modify_list
 
-.. code-block:: text
 
-    {"first_number": 30, "last_number": 10, "reversed": [10, 40, 50, 20, 30], "sorted": [10, 20, 30, 40, 50]}
+Access 3D NumPy array
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2. List manipulation
-~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: text
-    
-    .. literalinclude:: scripts/problem_set.py
-    :language: python
-    :start-after: # -- start modify_list --
-    :end-before: # -- end modify_list --
-    :linenos:
-
-Input:
-
-.. code-block:: python
-
-    print(modify_list([10, 20, 30, 40, 50]))
-
-Output:
-
-.. code-block:: text
-
-    [10, 20, "hello", 30, "lemon", "strawberry"]
-
-3. Access 3D NumPy array
-~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: text
-    
-    .. literalinclude:: scripts/problem_set.py
+.. literalinclude:: scripts/problem_set.py
     :language: python
     :start-after: # -- start access_3d_elements --
     :end-before: # -- end access_3d_elements --
@@ -72,8 +40,8 @@ Output:
 
     {"first_2D": [[1, 2, 3],[4, 5, 6]], "last_row_first_2D": [4, 5, 6], "last_element_first_row_last_2D": 9}
 
-4. Calculate the area of trapezoid
-~~~~~~~~~~~~~~~~~~~~~
+Calculate the area of trapezoid
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: text
     
