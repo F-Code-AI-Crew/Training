@@ -110,7 +110,7 @@ def modify_list(my_list: list) -> list:
 
 
 # -- start access_3d_elements --
-def access_3d_elements(array_3d: list) -> dict:
+def access_3d_elements(array_3d: list) -> list:
     """
     Access specific elements from a 3D array.
 
@@ -121,16 +121,15 @@ def access_3d_elements(array_3d: list) -> dict:
 
     Returns
     -------
-    dict
-        Selected elements from the 3D array.
-        - The first 2D array.
-        - The last row of the first 2D array.
-        - The last element in the the first row of the last 2D array.
+    list
+        - Index 0: The first 2D array.
+        - Index 1: The last row of the first 2D array.
+        - Index 2: The last element in the the first row of the last 2D array.
 
     Examples
     --------
     >>> access_3d_elements([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
-    {"first_2D": [[1, 2, 3],[4, 5, 6]], "last_row_first_2D": [4, 5, 6], "last_element_first_row_last_2D": 9}
+    [[[1, 2, 3],[4, 5, 6]], [4, 5, 6], 9]
 
     Note
     ----
@@ -139,12 +138,10 @@ def access_3d_elements(array_3d: list) -> dict:
     - The last element in the the first row of the last 2D array: 9
     """
 
-    # Your code here
-    return {
-        "first_2D": None,
-        "last_row_first_2D": None,
-        "last_element_first_row_last_2D": None, 
-    }
+    # Your code starts here
+    result: list = []
+    # Your code ends here
+    return result
 # -- end access_3d_elements --
 
 
@@ -177,13 +174,15 @@ def calc_area_of_trapezoid(a: int, b: int, h: int) -> float:
     - Area = ((8 + 16) / 2) * 12 = 144.0
     """
 
-    # Your code here
-    return 0.
+    # Your code starts here
+    result: float = 0.
+    # Your code ends here
+    return result
 # -- end calc_area_of_trapezoid --
 
 
 def main():
-    # Test your code here
+    # Try your code here
     pass
 
 
