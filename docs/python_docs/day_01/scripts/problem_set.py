@@ -90,7 +90,7 @@ def modify_list(my_list: list) -> list:
     Examples
     --------
     >>> modify_list([1, 2, 3, 4, 5, 6])
-    [99, 1, 2, 'hello', 4, 5, 'lemon', 'strawberry']
+    [99, 1, 2, 'hello', 3, 5, 'lemon', 'strawberry']
 
     Note
     ----
