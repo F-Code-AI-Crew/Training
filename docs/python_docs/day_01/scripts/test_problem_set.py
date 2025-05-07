@@ -70,23 +70,23 @@ def test_modify_list():
 
 def test_access_3d_elements():
     test_1_input = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]
-    test_1_output = {"first_2D": [[1, 2, 3], [4, 5, 6]], "last_row_first_2D": [4, 5, 6], "last_element_first_row_last_2D": 9}
+    test_1_output = [[[1, 2, 3], [4, 5, 6]], [4, 5, 6], 9]
     assert access_3d_elements(test_1_input) == test_1_output
 
     test_2_input = [[[1, 2, 3]]]
-    test_2_output = {"first_2D": [[1, 2, 3]], "last_row_first_2D": [1, 2, 3], "last_element_first_row_last_2D": 3}
+    test_2_output = [[[1, 2, 3]], [1, 2, 3], 3]
     assert access_3d_elements(test_2_input) == test_2_output
 
     test_3_input = [[[1, 2], [3, 4], [5, 6]], [[7, 8], [9, 10], [11, 12]]]
-    test_3_output = {"first_2D": [[1, 2], [3, 4], [5, 6]], "last_row_first_2D": [5, 6], "last_element_first_row_last_2D": 8}
+    test_3_output = [[[1, 2], [3, 4], [5, 6]], [5, 6], 8]
     assert access_3d_elements(test_3_input) == test_3_output
 
     test_4_input = [[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
-    test_4_output = {"first_2D": [[1, 2, 3]], "last_row_first_2D": [1, 2, 3], "last_element_first_row_last_2D": 9}
+    test_4_output = [[[1, 2, 3]], [1, 2, 3], 9]
     assert access_3d_elements(test_4_input) == test_4_output
 
     test_5_input = [[[1]], [[2]], [[3]]]
-    test_5_output = {"first_2D": [[1]], "last_row_first_2D": [1], "last_element_first_row_last_2D": 3}
+    test_5_output = [[[1]], [1], 3]
     assert access_3d_elements(test_5_input) == test_5_output
 
 
