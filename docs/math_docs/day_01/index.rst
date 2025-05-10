@@ -8,3 +8,4 @@ Day 1
     system_of_linear_equations
     matrix
     eliminations
+    row_echelon_form_matrix

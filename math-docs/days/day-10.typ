@@ -1,0 +1,2 @@
+= Backpropagation
+= Newton, Hessian Method
