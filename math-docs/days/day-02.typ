@@ -1,10 +1,10 @@
 #set heading(numbering: "1.")
 
-= Introduction
+== Introduction
 
 Linear systems of equations form a core topic in linear algebra with widespread applications in mathematics, science, engineering, and technology. Solving linear systems efficiently is crucial, and among various techniques, _Gaussian elimination_ is one of the most effective and widely used.
 
-= Linear Systems
+== Linear Systems
 
 A linear system of equations consists of multiple linear equations involving the same set of variables:
 
@@ -23,7 +23,7 @@ Where:
 - $x_j$ are the unknowns,
 - $b_i$ are the constants.
 
-= Matrix Representation
+== Matrix Representation
 
 A linear system can be written compactly in matrix form as:
 
@@ -36,14 +36,14 @@ Where:
 
 This representation is ideal for applying numerical methods.
 
-== Determinant of a Matrix
+=== Determinant of a Matrix
 
 The determinant of a square matrix $A$, denoted $det(A)$ or $|A|$, helps determine invertibility.
 
 For a $2 times 2$ matrix:
 $ det mat(a, b; c, d) = "ad" - "bc" $
 
-== Transpose of a Matrix
+=== Transpose of a Matrix
 
 The transpose of a matrix $A$, denoted $A^T$, swaps its rows and columns.
 
@@ -51,7 +51,7 @@ Example:
 $ A = mat(1, 2, 3; 4, 5, 6) $
 $ A^T = mat(1, 4; 2, 5; 3, 6) $
 
-== Inverse of a Matrix
+=== Inverse of a Matrix
 
 A square matrix $A$ has an inverse $A^"-1"$ if:
 
@@ -61,11 +61,11 @@ Methods to compute $A^"-1"$:
 - Augmented matrix (row operations)
 - Adjoint method: $A^"-1" = 1 / det(A) dot "adj"(A)$
 
-= Gaussian Elimination
+== Gaussian Elimination
 
 A step-by-step method to reduce a matrix to upper triangular form:
 
-== Steps:
+=== Steps:
 
 1. *Form the augmented matrix*: $[A | B]$
 2. *Forward elimination*:
@@ -74,7 +74,7 @@ A step-by-step method to reduce a matrix to upper triangular form:
 3. *Back substitution*:
     - Solve for variables starting from the last row upward
 
-== Example
+=== Example
 
 Given the system:
 
@@ -84,7 +84,7 @@ $cases(
     -2x + 5y + 3z & = 7
 )$
 
-=== Step 1: Augmented Matrix
+==== Step 1: Augmented Matrix
 
 $mat(
     2, 3, -1, |, 5;
@@ -92,27 +92,27 @@ $mat(
     -2, 5, 3, |, 7;
 )$
 
-=== Step 2: Row Reduction
+==== Step 2: Row Reduction
 
 - Normalize the first row
 - Eliminate entries below the pivot
 - Repeat for next rows
 
-=== Step 3: Back Substitution
+==== Step 3: Back Substitution
 
 Find values of $z$, then $y$, and finally $x$.
 
-= Gauss–Jordan Elimination
+== Gauss–Jordan Elimination
 
 An extension of Gaussian Elimination that produces Reduced Row Echelon Form (RREF):
 
-== Steps:
+=== Steps:
 
 - Form the augmented matrix $[A | B]$
 - Use row operations to form leading 1s (pivots)
 - Zero out *both* above and below the pivot in each column
 
-== Resulting Form:
+=== Resulting Form:
 
 $mat(
     1, 0, 0, |, x_1;
@@ -120,7 +120,7 @@ $mat(
     0, 0, 1, |, x_3;
 )$
 
-= Row Echelon Form (REF)
+== Row Echelon Form (REF)
 
 A matrix is in _row echelon form_ if:
 
@@ -129,7 +129,7 @@ A matrix is in _row echelon form_ if:
 - Each pivot is to the right of the one in the row above
 - All entries below a pivot are 0
 
-== Example
+=== Example
 
 $mat(
     1, 2, -1, |, 4;
@@ -137,13 +137,13 @@ $mat(
     0, 0, 1, |, 5;
 )$
 
-== Advantages
+=== Advantages
 
 - Simplifies solving linear systems
 - Easy to implement algorithmically
 - Helps identify inconsistent or dependent systems
 
-== Visual Representation
+=== Visual Representation
 
 $mat(
     1, "", "", "";
@@ -156,7 +156,7 @@ Interpretation:
 - Leading 1s at $A_{11}$ and $A_{22}$
 - All entries below pivots are 0
 
-== Solving with Row Echelon Form (REF)
+=== Solving with Row Echelon Form (REF)
 We are given the system:
 
 $cases(
@@ -216,6 +216,6 @@ First row:
 
 $ x + y + z = 6 -> x = 6 - 11 / 7 - 9 / 7 = 22 / 7 $
 
-== Final Answer:
+=== Final Answer:
 
 $ x = 22 / 7, y = 11 / 7, z = 9 / 7 $

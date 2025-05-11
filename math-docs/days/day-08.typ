@@ -1,4 +1,4 @@
-= Limit
-= Derivative
-= Partial Derivative
-= Gradient
+== Limit
+== Derivative
+== Partial Derivative
+== Gradient
