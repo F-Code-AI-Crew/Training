@@ -1,6 +1,11 @@
 #set enum(numbering: "1.A.")
 
 #import "@preview/orange-book:0.6.0": book
+#import "@preview/theorion:0.3.3": *
+#import cosmos.fancy: *
+// #import cosmos.rainbow: *
+// #import cosmos.clouds: *
+#show: show-theorion
 
 #show: book.with(
   title: "AI 1 Training",
