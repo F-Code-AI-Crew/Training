@@ -1,2 +1,2 @@
-= Probability
-= Probability Distributions
+== Probability
+== Probability Distributions
