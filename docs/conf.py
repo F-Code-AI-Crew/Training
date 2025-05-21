@@ -34,6 +34,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 html_logo = '_static/images/fcode.svg'
+html_favicon = '_static/images/fcode.svg'
 html_css_files = ["stylesheets/style.css"]
 html_theme_options = {
     "logo": {
@@ -43,7 +44,22 @@ html_theme_options = {
         "alt_text": "F-Code Logo",
     },
     "navbar_start": ["navbar-logo"],
+    "icon_links": [
+        {
+            "name": "F-Code AI GitHub",
+            "url": "https://github.com/F-Code-AI-Crew",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "F-Code Facebook",
+            "url": "https://www.facebook.com/fcodeclub",
+            "icon": "fa-brands fa-facebook",
+        },
+    ],
+    "icon_links_label": "Quick Links",
+    "use_edit_page_button": False,
 }
+html_show_sourcelink = False
 
 
 pygments_style = "friendly"  # Try also "friendly", "monokai", etc.
