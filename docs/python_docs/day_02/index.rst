@@ -6,3 +6,7 @@ Day 2
     :maxdepth: 2
 
     control_flow
+    loops
+    exception_handling
+    test
+    debug
