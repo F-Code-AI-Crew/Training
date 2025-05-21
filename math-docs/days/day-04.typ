@@ -1,4 +1,4 @@
-= Vector
-= Vector Space
-= Linear Transformation
-= Introduction to SVMs
+== Vector
+== Vector Space
+== Linear Transformation
+== Introduction to SVMs

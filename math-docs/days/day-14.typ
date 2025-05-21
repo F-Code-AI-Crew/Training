@@ -1,2 +1,2 @@
-= Sample
-= Estimating
+== Sample
+== Estimating

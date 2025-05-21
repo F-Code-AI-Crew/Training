@@ -1,5 +1,6 @@
-Gauss Elemination
-------------------
+Gaussian Elimination
+---------------------
+
 
 Gauss-Jordan Elimination
--------------------------
+--------------------------

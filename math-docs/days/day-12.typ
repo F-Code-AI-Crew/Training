@@ -1,3 +1,3 @@
-= Taylor Series, Taylor Theorem
-= Linearization
-= Optimization
+== Taylor Series, Taylor Theorem
+== Linearization
+== Optimization

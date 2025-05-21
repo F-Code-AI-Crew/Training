@@ -1,6 +1,11 @@
 #set enum(numbering: "1.A.")
 
 #import "@preview/orange-book:0.6.0": book
+#import "@preview/theorion:0.3.3": *
+#import cosmos.fancy: *
+// #import cosmos.rainbow: *
+// #import cosmos.clouds: *
+#show: show-theorion
 
 #show: book.with(
   title: "AI 1 Training",
@@ -9,12 +14,15 @@
   author: "",
 )
 
+= Linear Algebra
 #include "days/day-02.typ"
 #include "days/day-04.typ"
 #include "days/day-06.typ"
+= Calculus
 #include "days/day-08.typ"
 #include "days/day-10.typ"
 #include "days/day-12.typ"
+= Probability and Statistics
 #include "days/day-13.typ"
 #include "days/day-14.typ"
 #include "days/day-15.typ"
