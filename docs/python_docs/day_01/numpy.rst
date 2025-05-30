@@ -5,7 +5,7 @@ While Python's built-in data structures e.g. ``list``, are powerful and flexible
 sometimes you need even more - especially when working with large datasets or doing 
 scientific and numerical computing.
 
-.. image:: /_static/images/day_01/slow.jpg
+.. image:: /_static/images/python_day_01/slow.jpg
    :alt: Python is fast
    :align: center
    :width: 400px
