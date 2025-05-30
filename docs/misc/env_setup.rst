@@ -1,6 +1,3 @@
-.. TODO: Anchor links to these tools
-
-
 Setup Environment
 ==================
 
@@ -80,7 +77,7 @@ Isolate project environment from the global one.
 
     .. tab-item:: Windows
 
-        In you project directory, run
+        In your project directory, run
 
         .. code-block:: powershell
 
@@ -143,7 +140,7 @@ the two listed below, there are some extensions that can enhance your workflow.
 
 1. `Visual Studio Code <https://code.visualstudio.com/>`_. Ensure to install following extensions:
 
-* `Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_: Complete pack for editting python code
+* `Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_: Complete pack for editing python code
 * `Mypy Type Checker <https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker>`_: Enhance type checking
 
 2. `PyCharm <https://www.jetbrains.com/pycharm/>`_. Ensure to install following plugin:
