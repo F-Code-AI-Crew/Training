@@ -1,5 +1,6 @@
+========
 Variable
-----------
+========
 
 Create a variable in python
 
@@ -31,8 +32,9 @@ When naming a variable in Python, keep these rules in mind:
     * Function names should be lowercase, with words separated by underscores as necessary to improve readability.
     * Variable names follow the same convention as function names.
 
+=========
 Operation
-----------
+=========
 
 Python provides a range of built-in operators that let you 
 perform calculations and comparisons directly with your data. 
@@ -48,8 +50,9 @@ Understanding how these operators behave is essential to writing effective and a
 
 
 
+----------
 Arithmetic
-~~~~~~~~~~
+----------
 
 .. list-table::
     :header-rows: 1
@@ -69,8 +72,9 @@ Arithmetic
     * - ``%``
       - Remainder
 
+----------
 Comparison
-~~~~~~~~~~~
+----------
 
 .. list-table::
     :header-rows: 1
@@ -110,8 +114,10 @@ This could be achieved by:
 * Type hint w/ IDE support
 * Informative comments & documentation
 
+
+==========
 Data types
-~~~~~~~~~~~
+==========
 
 Python has a variety of built-in data types, grouped into the 
 following categories:

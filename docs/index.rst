@@ -1,5 +1,6 @@
+#############
 Crew Training
-===============
+#############
 
 This is the homepage of F-Code AI crew training, serves as the central hub for all training 
 materials, and learning resources.
