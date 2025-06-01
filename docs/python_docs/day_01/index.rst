@@ -1,5 +1,6 @@
+*****
 Day 1
-======
+*****
 
 .. toctree::
     :caption: Contents
