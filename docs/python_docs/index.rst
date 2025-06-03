@@ -17,9 +17,9 @@ Contents
 
 * Day 1: Variable, list, numpy, function
 
-  * `Slide <day_01/index>`_
-  * `Document <day_01/index>`_
-  * `Problem set <day_01/pset>`_
+  * :doc:`Slide <day_01/index>`
+  * :doc:`Document <day_01/index>`
+  * :doc:`Problem set <day_01/pset>`
 
 * Day 2: Control flow, loop, exception, testing, debug
 
