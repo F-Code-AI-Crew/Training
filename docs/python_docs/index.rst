@@ -17,7 +17,7 @@ Contents
 
 * Day 1: Variable, list, numpy, function
 
-  * :doc:`Slide <day_01/index>`
+  * :download:`Slide </_static/downloads/python/day_01.pdf>`
   * :doc:`Document <day_01/index>`
   * :doc:`Problem set <day_01/pset>`
 
