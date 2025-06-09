@@ -1,10 +1,12 @@
+========
 Function
-------------
+========
 
 Functions: reusable blocks of code that perform specific tasks.
 
+-----------------
 Define a function
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------
 
 Python function syntax:
 
@@ -29,8 +31,9 @@ Example
     :linenos:
 
 
+---------------
 Call a function
-~~~~~~~~~~~~~~~~
+---------------
 
 To call a function, use the function name followed by parentheses e.g. ``function_name()``.
 
@@ -66,8 +69,9 @@ Output:
     ...
 
 
+----------
 Parameters
-~~~~~~~~~~~
+----------
 
 Parameters enhance the reusability of a function in computation, modularizing code, etc.
 
@@ -86,8 +90,9 @@ Do things a bit more complex
    :linenos:
 
 
+------
 Return
-~~~~~~~
+------
 
 A function can also return a result that can be stored or used elsewhere in your program, instead of just
 printing the result out to the console
@@ -108,8 +113,9 @@ Now the result of ``complex_four`` could be stored in a variable, used in other 
    :linenos:
 
 
+-----
 Scope
-~~~~~~
+-----
 
 Python follows the **LEGB rules** for scope. Today let's focus on **L** and **G** rule, which is super close to
 C rules for scoping.
@@ -119,8 +125,9 @@ In short
 * **L** - Local: Accessible in a code block, function 
 * **G** - Global: Accessible in the program, script, and module
 
+---------
 Docstring
------------
+---------
 
 A docstring (short for documentation string) is a special kind of string used to describe what a function, 
 class, or module does. It's placed right after the ``def`` or ``class`` line and is enclosed in triple 

@@ -1,5 +1,6 @@
+====
 List
---------
+====
 
 Python `List` functions like an array, with much more power 
 and flexibility like holding multiple types of variables, 
@@ -12,8 +13,10 @@ brackets:
     ["Code", "the", "dream"]
     [1, "one", 2, "two", 3, "three"]
 
+
+---------------
 List operations
-~~~~~~~~~~~~~~~~
+---------------
 
 1. Access and update by index
 
@@ -87,8 +90,10 @@ of a list using the `start:stop:step` syntax.
     numbers: list[int] = [10, 20, 30, 40, 50]
     slice_1: list[int] = numbers[1:4]  # [20, 30, 40]
 
+
+---------------------
 More list operations?
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Python provides a **comprehensive set of methods** for working 
 with lists, documented in the official `List API documentation <https://docs.python.org/3/tutorial/datastructures.html#more-on-lists>`_
