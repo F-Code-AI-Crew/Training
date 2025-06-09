@@ -75,27 +75,6 @@ Why handle exceptions?
 4. **Use `else` for success logic**  
    Code in `else` runs only if no exception occurred, keeping success and error branches separate.
 
-5. **Use `finally` or context managers for cleanup**  
-   Ensure resources are released no matter what:
-
-   .. code-block:: python
-
-       try:
-           f = open("data.txt")
-           data = f.read()
-       except FileNotFoundError:
-           print("File not found.")
-       finally:
-           f.close()
-
-   Or better:
-
-   .. code-block:: python
-
-       with open("data.txt") as f:
-           data = f.read()
-
-
 The try…except Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -169,7 +148,7 @@ You can deliberately throw exceptions:
 
 .. code-block:: python
 
-    def set_age(age):
+    def set_age(age: int):
         if age < 0:
             raise ValueError("Age cannot be negative.")
         print("Age set to", age)
@@ -185,31 +164,6 @@ Chaining exceptions:
     except ZeroDivisionError as e:
         raise RuntimeError("Custom error message") from e
 
-
-Context Managers with `with`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The `with` statement simplifies resource management and ensures proper cleanup:
-
-.. code-block:: python
-
-    with open("example.txt", "r") as f:
-        contents = f.read()
-
-Custom context manager example:
-
-.. code-block:: python
-
-    class ManagedResource:
-        def __enter__(self):
-            print("Acquire resource")
-            return self
-        def __exit__(self, exc_type, exc_val, exc_tb):
-            print("Release resource")
-
-    with ManagedResource():
-        print("Using resource")
-
 Additional Resources
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -217,5 +171,3 @@ Additional Resources
   https://docs.python.org/3/tutorial/errors.html  
 - Built‑in Exception Reference:  
   https://docs.python.org/3/library/exceptions.html  
-- Context Manager Protocol:  
-  https://docs.python.org/3/reference/datamodel.html#context-managers  

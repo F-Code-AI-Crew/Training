@@ -52,7 +52,7 @@ Assert Methods
 
 - `assertEqual(a, b)`  
 - `assertTrue(x)` / `assertFalse(x)`  
-- `assertRaises(exc, func, *args)` or context manager `with self.assertRaises(exc):`  
+- `assertRaises(exc, func, *args)`  
 
 Organizing Test Suites
 ----------------------
@@ -77,7 +77,7 @@ Running Tests
 
 - **In IDE**: Most editors (VSCode, PyCharm) detect and run `unittest` automatically.
 
-Introduction to `pytest` (Optional)
+Introduction to `pytest`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `pytest` is a third‑party framework with a simpler syntax and powerful features.
@@ -140,7 +140,7 @@ Example: Testing a `factorial` function
 
 .. code-block:: python
 
-    def factorial(n):
+    def factorial(n: int) -> int:
         if n < 0:
             raise ValueError("n must be >= 0")
         return 1 if n < 2 else n * factorial(n-1)

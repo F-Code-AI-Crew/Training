@@ -23,7 +23,7 @@ Types of Errors
 
 .. code-block:: python
 
-    def average(a, b):
+    def average(a: int, b: int) -> float:
         return (a + b) / 3  # Incorrect formula
 
 
@@ -34,8 +34,8 @@ A simple and common way to debug is to print the values of variables:
 
 .. code-block:: python
 
-    def greet(name):
-        print(f"name = {name}")  # Debug print
+    def greet(name: str) -> str:
+        print(f"Debug: name = {name}")  # Debug print
         return f"Hello, {name}!"
 
     greet("Alice")
@@ -63,17 +63,18 @@ Python has a built-in debugger called ``pdb``:
 
     import pdb
 
-    def divide(a, b):
+    def divide(a: int, b: int) -> float:
         pdb.set_trace()
         return a / b
 
     divide(10, 2)
 
 When run, it opens an interactive prompt:
-- ``n``: next line
-- ``c``: continue
-- ``q``: quit
-- ``p variable``: print value
+
+- `n`: next line  
+- `c`: continue  
+- `q`: quit  
+- `p variable`: print variable's value  
 
 
 Understanding Tracebacks

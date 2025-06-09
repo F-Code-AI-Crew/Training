@@ -1,4 +1,4 @@
-def process_and_divide(data, index, divisor):
+def process_and_divide(data: list[str], index: int, divisor: int) -> str:
     try:
         raw = data[index]
         print(f"Get raw = {raw}")

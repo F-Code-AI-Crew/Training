@@ -20,25 +20,31 @@ Looping through common iterables:
 .. code-block:: python
 
     # List
-    for fruit in ["apple", "banana", "cherry"]:
+    for fruit: str in ["apple", "banana", "cherry"]:
         print(fruit)
 
     # Tuple
-    for coord in (0, 1, 2):
+    for coord: int in (0, 1, 2):
         print(coord)
 
     # String
-    for char in "hello":
+    for char:str in "hello":
         print(char)
 
     # range()
     for i in range(5):
         print(i)  # 0, 1, 2, 3, 4
 
-    # Dictionary (keys by default)
-    ages = {"Alice": 30, "Bob": 25}
+    # Dictionary
+    ages: dict[str, int] = {"Alice": 30, "Bob": 25}
+    
+    # iterates over keys
     for name in ages:
         print(name, ages[name])
+    
+    # or using items() to get key-value pairs
+    for name, age in ages.items():
+        print(name, age)
 
 Break and Continue
 ~~~~~~~~~~~~~~~~~~
@@ -48,7 +54,7 @@ Break and Continue
 
 .. code-block:: python
 
-    for i in range(10):
+    for i: int in range(10):
         if i == 5:
             break       # stops the loop when i == 5
         if i % 2 == 0:
@@ -62,7 +68,7 @@ The `else` block runs **only if** the loop completes without encountering `break
 
 .. code-block:: python
 
-    for i in range(3):
+    for i: int in range(3):
         print(i)
     else:
         print("Done without break")
@@ -82,8 +88,8 @@ Example:
 
 .. code-block:: python
 
-    squares = [x*x for x in range(6)]      # [0, 1, 4, 9, 16, 25]
-    evens  = [x for x in range(10) if x%2==0]  # [0, 2, 4, 6, 8]
+    squares: list[int] = [x*x for x in range(6)]      # [0, 1, 4, 9, 16, 25]
+    evens: list[int]  = [x for x in range(10) if x%2==0]  # [0, 2, 4, 6, 8]
 
 While Loop
 ~~~~~~~~~~
@@ -101,7 +107,7 @@ Loop termination condition: when `condition` becomes `False`.
 
 .. code-block:: python
 
-    count = 3
+    count: int = 3
     while count > 0:
         print(count)
         count -= 1
@@ -111,7 +117,7 @@ Break and Continue in While
 
 .. code-block:: python
 
-    n = 0
+    n: int = 0
     while True:
         n += 1
         if n == 3:
@@ -127,7 +133,7 @@ While Loop with Else
 
 .. code-block:: python
 
-    i = 0
+    i: int = 0
     while i < 3:
         print(i)
         i += 1
@@ -141,8 +147,8 @@ You can place loops inside loops for multi-dimensional iteration:
 
 .. code-block:: python
 
-    for i in range(3):
-        for j in range(2):
+    for i: int in range(3):
+        for j: int in range(2):
             print(f"i={i}, j={j}")
 
 Applications of Loops
@@ -152,16 +158,16 @@ Applications of Loops
 
   .. code-block:: python
 
-      names = ["Anna", "Ben", "Cara"]
-      for name in names:
+      names: list[str] = ["Anna", "Ben", "Cara"]
+      for name: str in names:
           print(name.upper())
 
 - **Calculating sum**:
 
   .. code-block:: python
 
-      total = 0
-      for num in [1, 2, 3, 4]:
+      total: int = 0
+      for num: int in [1, 2, 3, 4]:
           total += num
       print(total)  # 10
 
@@ -169,9 +175,9 @@ Applications of Loops
 
   .. code-block:: python
 
-      target = 7
-      found = False
-      for x in range(10):
+      target: int = 7
+      found: bool = False
+      for x: int in range(10):
           if x == target:
               found = True
               break
@@ -181,8 +187,8 @@ Applications of Loops
 
   .. code-block:: python
 
-      text = "Hello World"
-      vowels = [ch for ch in text if ch.lower() in "aeiou"]
+      text: str = "Hello World"
+      vowels: list[str] = [ch for ch in text if ch.lower() in "aeiou"]
       print(vowels)  # ['e', 'o', 'o']
 
 Additional Resources

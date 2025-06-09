@@ -1,24 +1,32 @@
-def calculate_average(scores):
-    total = 0
-    for score in scores:
-        if isinstance(score, int):
-            total += score
-    average = total / len(scores)
-    return average
+import pdb
+
+def sum_odds_until(n: int) -> int:
+    total: int = 0
+    current: int = 1
+
+    while total < n:
+        pdb.set_trace()
+        total += current
+        current += 2
+
+    return total
 
 # Revised Version
-def calculate_average2(scores):
-    try:
-        total = 0
-        numLen = 0
-        for score in scores:
-            if isinstance(score, int):
-                total += score
-                numLen += 1
-        average = total / numLen
-        return average
-    except ZeroDivisionError:
-        return "Error: No valid scores to calculate average!"
+def sum_odds_until_fixed(n: int) -> int:
+    total: int = 0
+    current: int = 1
 
-grades = [80, 90, 100, "A"]
-print("Average grade:", calculate_average(grades))
+    while total + current <= n:
+        pdb.set_trace()
+        total += current
+        current += 2
+
+    # while True:
+    #     total += current
+    #     current += 2
+    #     if total + current > n:
+    #         break
+    return total
+
+print(sum_odds_until(10)) 
+print(sum_odds_until_fixed(10)) 

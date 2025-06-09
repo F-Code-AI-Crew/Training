@@ -24,7 +24,7 @@ Example 1: Simple `if` statement
 
 .. code-block:: python
 
-    age = 20
+    age: int = 20
     if age >= 18:
         print("You are an adult.")
 
@@ -32,7 +32,7 @@ Example 2: `if-elif-else` with comparison operators
 
 .. code-block:: python
 
-    score = 85
+    score: int = 85
 
     if score >= 90:
         print("Grade: A")
@@ -55,8 +55,8 @@ Example 3: Combining conditions
 
 .. code-block:: python
 
-    temperature = 25
-    weather = "sunny"
+    temperature: int = 25
+    weather: str = "sunny"
 
     if temperature > 20 and weather == "sunny":
         print("Let's go for a picnic!")
@@ -65,7 +65,7 @@ Example 4: Using `not`
 
 .. code-block:: python
 
-    is_raining = False
+    is_raining: bool = False
 
     if not is_raining:
         print("You don't need an umbrella.")
@@ -79,7 +79,7 @@ Example 5: Nested conditions
 
 .. code-block:: python
 
-    score = 88
+    score: int = 88
 
     if score >= 80:
         if score >= 90:
