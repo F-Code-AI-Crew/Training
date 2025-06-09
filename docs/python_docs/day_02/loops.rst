@@ -1,10 +1,12 @@
+=====
 Loops
 =====
 
 Loops in Python allow you to execute a block of code repeatedly, either a known number of times or until a condition is met.
 
+--------
 For Loop
-~~~~~~~~
+--------
 
 The `for` loop iterates over an **iterable** (like a list, tuple, string, range, or dictionary).
 
@@ -46,8 +48,9 @@ Looping through common iterables:
     for name, age in ages.items():
         print(name, age)
 
+------------------
 Break and Continue
-~~~~~~~~~~~~~~~~~~
+------------------
 
 - `break` exits the loop immediately.
 - `continue` skips to the next iteration.
@@ -61,8 +64,9 @@ Break and Continue
             continue    # skips even numbers
         print(i)        # prints 1, 3
 
+------------------
 For Loop with Else
-~~~~~~~~~~~~~~~~~~
+------------------
 
 The `else` block runs **only if** the loop completes without encountering `break`.
 
@@ -73,8 +77,9 @@ The `else` block runs **only if** the loop completes without encountering `break
     else:
         print("Done without break")
 
+------------------
 List Comprehension
-~~~~~~~~~~~~~~~~~~
+------------------
 
 A concise way to build lists from iterables.
 
@@ -91,8 +96,9 @@ Example:
     squares: list[int] = [x*x for x in range(6)]      # [0, 1, 4, 9, 16, 25]
     evens: list[int]  = [x for x in range(10) if x%2==0]  # [0, 2, 4, 6, 8]
 
+----------
 While Loop
-~~~~~~~~~~
+----------
 
 Repeats a block **while** a condition is `True`.
 
@@ -112,8 +118,9 @@ Loop termination condition: when `condition` becomes `False`.
         print(count)
         count -= 1
 
+---------------------------
 Break and Continue in While
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 .. code-block:: python
 
@@ -126,8 +133,9 @@ Break and Continue in While
             break       # exit when n > 5
         print(n)        # prints 1, 2, 4, 5
 
+--------------------
 While Loop with Else
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 `else` executes if the loop terminates **without** `break`:
 
@@ -140,8 +148,9 @@ While Loop with Else
     else:
         print("Finished cleanly")
 
+------------
 Nested Loops
-~~~~~~~~~~~~
+------------
 
 You can place loops inside loops for multi-dimensional iteration:
 
@@ -151,8 +160,9 @@ You can place loops inside loops for multi-dimensional iteration:
         for j: int in range(2):
             print(f"i={i}, j={j}")
 
+---------------------------
 Applications of Loops
-~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 - **Iterating lists**:
 
@@ -191,8 +201,9 @@ Applications of Loops
       vowels: list[str] = [ch for ch in text if ch.lower() in "aeiou"]
       print(vowels)  # ['e', 'o', 'o']
 
+---------------------------
 Additional Resources
-~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 - Official Python docs on loops:  
   https://docs.python.org/3/tutorial/controlflow.html#for  

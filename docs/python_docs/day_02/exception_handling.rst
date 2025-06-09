@@ -1,10 +1,12 @@
+==================
 Exception Handling
 ==================
 
 Python provides a robust mechanism for **handling runtime errors** (exceptions) so that programs can recover, clean up resources, or fail gracefully instead of crashing.
 
+-------------------------------
 Introduction to Exceptions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Exceptions are errors that occur during execution and interrupt normal program flow.
 
@@ -40,9 +42,9 @@ Exceptions are errors that occur during execution and interrupt normal program f
 
       open("missing.txt")  # FileNotFoundError
 
-
+-------------------------------
 Why handle exceptions?
-~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 - **Prevent crashes** and display user‑friendly error messages.  
 - **Allow fallback or recovery** for expected errors (e.g. network failure, missing input).  
@@ -75,8 +77,9 @@ Why handle exceptions?
 4. **Use `else` for success logic**  
    Code in `else` runs only if no exception occurred, keeping success and error branches separate.
 
+-------------------------------
 The try…except Structure
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Basic syntax:
 
@@ -111,8 +114,9 @@ Multiple except blocks:
         print("Unexpected error:", e)
 
 
+-------------------------------
 Else Block
-~~~~~~~~~~
+-------------------------------
 
 Code inside `else` runs **only if** no exception occurred:
 
@@ -126,8 +130,9 @@ Code inside `else` runs **only if** no exception occurred:
         print("Conversion successful:", x)
 
 
+-------------------------------
 Finally Block
-~~~~~~~~~~~~~
+-------------------------------
 
 Code inside `finally` runs **regardless** of what happened—exception, return, or normal exit. Useful for cleanup:
 
@@ -141,8 +146,9 @@ Code inside `finally` runs **regardless** of what happened—exception, return, 
         conn.close()
 
 
+-------------------------------
 Raising Exceptions with `raise`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 You can deliberately throw exceptions:
 
@@ -164,10 +170,12 @@ Chaining exceptions:
     except ZeroDivisionError as e:
         raise RuntimeError("Custom error message") from e
 
+-------------------------------
 Additional Resources
-~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 - Official tutorial on errors and exceptions:  
   https://docs.python.org/3/tutorial/errors.html  
 - Built‑in Exception Reference:  
   https://docs.python.org/3/library/exceptions.html  
+- Logging using loguru: https://github.com/Delgan/loguru

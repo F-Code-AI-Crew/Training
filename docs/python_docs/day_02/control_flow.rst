@@ -1,11 +1,13 @@
+============
 Control Flow
-------------
+============
 
 In Python, **control flow statements** allow you to direct the execution
 of code depending on conditions. This is essential for creating logic in your programs.
 
+----------------------
 Conditional Statements
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Python uses `if`, `elif`, and `else` to control the flow based on boolean conditions.
 
@@ -43,8 +45,9 @@ Example 2: `if-elif-else` with comparison operators
     else:
         print("Grade: F")
 
+------------------------
 Using Logical Operators
-~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 You can combine multiple conditions using logical operators:
 - `and`: True if **both** conditions are true.
@@ -70,8 +73,9 @@ Example 4: Using `not`
     if not is_raining:
         print("You don't need an umbrella.")
 
+----------------------
 Nested If Statements
-~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Python allows you to nest `if` statements inside each other for more complex logic.
 
@@ -91,8 +95,9 @@ Example 5: Nested conditions
 
 Indentation is critical in nested ifs — each level must be indented correctly.
 
+----------------------
 Extra Tips and Tools
-~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 - Use `input()` and `int()` or `float()` to build interactive programs:
 

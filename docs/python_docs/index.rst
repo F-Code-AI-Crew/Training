@@ -24,7 +24,7 @@ Contents
 * Day 2: Control flow, loop, exception, testing, debug
 
   * `Slide`
-  * `Document`
+  * :doc:`Document <day_02/index>`
   * `Problem set`
 
 * Day 2: Control flow, loop, exception, testing, debug

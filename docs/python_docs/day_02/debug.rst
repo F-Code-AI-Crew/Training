@@ -1,8 +1,10 @@
+=========
 Debugging
 =========
 
 In programming, **bugs** are errors that cause a program to behave incorrectly or crash. Debugging is the process of finding and fixing these bugs.
 
+---------------
 Types of Errors
 ---------------
 
@@ -26,7 +28,7 @@ Types of Errors
     def average(a: int, b: int) -> float:
         return (a + b) / 3  # Incorrect formula
 
-
+-------------------------
 Using print for Debugging
 -------------------------
 
@@ -40,7 +42,7 @@ A simple and common way to debug is to print the values of variables:
 
     greet("Alice")
 
-
+----------------------
 Using Debugger in IDEs
 ----------------------
 
@@ -53,7 +55,7 @@ Modern IDEs like **VSCode** and **PyCharm** provide powerful visual debuggers:
 - **Watch Window**: Monitor specific variables.
 - **Call Stack**: View the sequence of function calls.
 
-
+--------------------
 Using the pdb Module
 --------------------
 
@@ -76,7 +78,7 @@ When run, it opens an interactive prompt:
 - `q`: quit  
 - `p variable`: print variable's value  
 
-
+------------------------
 Understanding Tracebacks
 ------------------------
 
@@ -95,6 +97,7 @@ When an exception occurs, Python provides a **traceback** — a detailed report 
 The traceback will show the exact file, line number, and function call that caused the error.
 
 
+------------------------------
 Effective Debugging Techniques
 ------------------------------
 
@@ -105,6 +108,7 @@ Effective Debugging Techniques
 - Read tracebacks carefully to locate the source.
 - Check assumptions (types, values, ranges).
 
+--------------------
 Additional Resources
 --------------------
 
