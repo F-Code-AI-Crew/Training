@@ -20,19 +20,20 @@ def count_word_freq(text: str) -> dict:
 
     Note
     ----
-    - Count how often each word appears (ignore punctuation and case).
+    - Turn input text to lower case, remove punctuation ( .,!?;:()[]{}'\"- )
+    - Count how often each word appears.
     - Store counts in a dictionary and print the top 10 most frequent words.
     """
     # Your code starts here
-    result: dict = {}
+    top_10: dict = {}
     # Your code ends here
-    return result
+    return top_10
 # -- end count word --
 
 # -- start grade calculator --
 def grade_calculator(raw_grade: list[dict]) -> list[dict]:
     """
-    Compute average score per student and per subject from a list of score records.
+    Compute average score per student and per subject from a list of score records (round to 1 decimal place).
 
     Parameters
     ----------
@@ -53,7 +54,7 @@ def grade_calculator(raw_grade: list[dict]) -> list[dict]:
     {"Name": "Alice", "Subject": "Science", "Score": 90}, 
     {"Name": "Bob", "Subject": "Science", "Score": 82}
     ])
-    [{"Alice": 87.5, "Bob": 80}, {"Math": 81.5, "Science": 86}]
+    [{"Alice": 87.5, "Bob": 80.0}, {"Math": 81.5, "Science": 86.0}]
     --------
 
     Note
@@ -64,9 +65,12 @@ def grade_calculator(raw_grade: list[dict]) -> list[dict]:
     - Calculate the average score per subject: 
         Math = (85 + 78 ) / 2 = 81.5
         Science =  (90 + 82) / 2 = 86
+    - Round all scores to 1 decimal place.
     """
     # Your code starts here
     result: list = []
+    student_scores: dict = {}
+    subject_scores: dict = {}
     # Your code ends here
     return result
 # -- end grade calculator --
