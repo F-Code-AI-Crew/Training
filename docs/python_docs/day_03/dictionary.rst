@@ -2,7 +2,8 @@
 Dictionaries in Python
 ======================
 
-1. What is a Dictionary?
+------------------------
+What is a Dictionary?
 ------------------------
 A dictionary in Python is an unordered collection of data in a key-value pair format. Dictionaries are mutable and indexed by keys, which can be any immutable type.
 
@@ -16,7 +17,8 @@ A dictionary in Python is an unordered collection of data in a key-value pair fo
        "city": "New York"
    }
 
-2. Creating a Dictionary
+------------------------
+Creating a Dictionary
 ------------------------
 You can create a dictionary in several ways:
 
@@ -28,7 +30,8 @@ You can create a dictionary in several ways:
    # Using the dict() constructor
    student = dict(name="John", grade="A")
 
-3. Accessing Elements
+---------------------
+Accessing Elements
 ---------------------
 Use the key inside square brackets or the ``get()`` method.
 
@@ -37,7 +40,8 @@ Use the key inside square brackets or the ``get()`` method.
    name = student["name"]
    grade = student.get("grade")
 
-4. Modifying Elements
+---------------------
+Modifying Elements
 ---------------------
 You can update a value using the assignment operator.
 
@@ -45,7 +49,8 @@ You can update a value using the assignment operator.
 
    student["grade"] = "A+"
 
-5. Adding Elements
+------------------
+Adding Elements
 ------------------
 To add a new key-value pair:
 
@@ -53,7 +58,8 @@ To add a new key-value pair:
 
    student["age"] = 20
 
-6. Removing Elements
+--------------------
+Removing Elements
 --------------------
 Several methods can be used:
 
@@ -63,7 +69,8 @@ Several methods can be used:
    student.pop("grade")
    student.clear()  # Removes all items
 
-7. Dictionary Methods
+---------------------
+Dictionary Methods
 ---------------------
 Common methods used with dictionaries:
 
@@ -73,7 +80,8 @@ Common methods used with dictionaries:
    values = student.values()
    items = student.items()
 
-8. Iterating Through a Dictionary
+---------------------------------
+Iterating Through a Dictionary
 ---------------------------------
 
 .. code-block:: python
@@ -81,7 +89,8 @@ Common methods used with dictionaries:
    for key, value in student.items():
        print(key, value)
 
-9. Nested Dictionaries
+----------------------
+Nested Dictionaries
 ----------------------
 
 .. code-block:: python
@@ -91,14 +100,16 @@ Common methods used with dictionaries:
        "person2": {"name": "Bob", "age": 30}
    }
 
-10. Dictionary Comprehension
+----------------------------
+Dictionary Comprehension
 ----------------------------
 
 .. code-block:: python
 
    squares = {x: x*x for x in range(5)}
 
-11. Real-Life Usage Examples
+----------------------------
+Real-Life Usage Examples
 ----------------------------
 
 **Machine Learning: Feature Representation**

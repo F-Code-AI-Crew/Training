@@ -2,12 +2,14 @@
 File I/O in Python
 ==================
 
-1. What is File I/O?
+--------------------
+What is File I/O?
 --------------------
 File I/O (Input/Output) refers to reading data from and writing data to files. 
 In Python, this is done using built-in functions.
 
-2. Opening a File
+-----------------
+Opening a File
 -----------------
 **Syntax:**
 
@@ -22,7 +24,8 @@ In Python, this is done using built-in functions.
 - `'b'`: Binary mode (e.g., 'rb', 'wb')
 - `'x'`: Create a new file, fails if file exists
 
-3. Reading from a File
+----------------------
+Reading from a File
 ----------------------
 .. code-block:: python
 
@@ -52,7 +55,8 @@ In Python, this is done using built-in functions.
          for i, line in enumerate(lines, 1):
              print(f"Line {i}: {line.strip()}")
 
-4. Writing to a File
+--------------------
+Writing to a File
 --------------------
 .. code-block:: python
 
@@ -62,7 +66,9 @@ In Python, this is done using built-in functions.
 
 Use `'a'` mode to append data instead of overwriting.
 
-5. Using ``with`` Statement
+
+---------------------------
+Using ``with`` Statement
 ---------------------------
 Automatically manages file closing.
 
@@ -71,7 +77,8 @@ Automatically manages file closing.
    with open('example.txt', 'r') as file:
        content = file.read()
 
-6. Working with Files Line-by-Line
+----------------------------------
+Working with Files Line-by-Line
 ----------------------------------
 .. code-block:: python
 
@@ -79,7 +86,8 @@ Automatically manages file closing.
        for line in file:
            print(line.strip())
 
-7. Checking File Existence (Optional)
+-------------------------------------
+Checking File Existence (Optional)
 -------------------------------------
 .. code-block:: python
 
@@ -89,7 +97,8 @@ Automatically manages file closing.
    else:
        print("File not found.")
 
-8. File Methods Summary
+-----------------------
+File Methods Summary
 -----------------------
 Below are commonly used file object methods in Python:
 
@@ -130,8 +139,8 @@ Below are commonly used file object methods in Python:
 
      position = file.tell()
 
-
-9. Binary File I/O
+------------------
+Binary File I/O
 ------------------
 
 **Write a Binary File**
@@ -151,8 +160,10 @@ Below are commonly used file object methods in Python:
         content = file.read()
     print("Binary content:", content)
 
-10. Example in Some of Project
-------------------
+---------------------------
+Example in Some of Project
+---------------------------
+
 **Reading Annotation File**
 
 .. code-block:: text
