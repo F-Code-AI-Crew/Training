@@ -118,7 +118,8 @@ Example: A Simple Data Dashboard
     ax.bar(data["Category"], data["Values"], color=['blue', 'green', 'red', 'purple'])
     st.pyplot(fig)
 
-
-For further learning, refer to the official documentation: `Streamlit Docs <https://docs.streamlit.io/>`
-
-For a concise overview, check out the cheat-sheet: `Streamlit Cheat Sheet <https://cheat-sheet.streamlit.app/>`
+--------------------
+Additional Resources
+--------------------
+- For further learning, refer to the official documentation: `Streamlit Docs <https://docs.streamlit.io/>`
+- For a concise overview, check out the cheat-sheet: `Streamlit Cheat Sheet <https://cheat-sheet.streamlit.app/>`
