@@ -10,6 +10,7 @@ Python
     day_01/index
     day_02/index
     day_03/index
+    day_06/index
 
 
 ========

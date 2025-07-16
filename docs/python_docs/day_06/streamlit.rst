@@ -5,11 +5,13 @@ Introduction to Streamlit
 --------------------
 What is Streamlit?
 --------------------
+
 Streamlit is an open-source Python framework that allows developers to build interactive and data-driven web applications with minimal effort. It is designed primarily for machine learning and data science applications, providing an easy way to create user interfaces without requiring extensive knowledge of web development.
 
 --------------------
 Why Use Streamlit?
 --------------------
+
 - **Simplicity**: Streamlit enables quick and easy creation of web applications using only Python scripts.
 - **No Frontend Experience Needed**: Unlike Flask or Django, Streamlit does not require HTML, CSS, or JavaScript knowledge.
 - **Rapid Prototyping**: Developers can quickly visualize data and test machine learning models with an interactive interface.
@@ -18,6 +20,7 @@ Why Use Streamlit?
 --------------------
 Installation
 --------------------
+
 To install Streamlit, simply run:
 
 .. code-block:: python
@@ -35,6 +38,7 @@ This will launch an example Streamlit application in your web browser.
 --------------------
 Writing Your First Streamlit App
 --------------------
+
 1. Create a Python file, e.g., `app.py`, and add the following code:
 
 .. code-block:: python
@@ -55,6 +59,7 @@ This will open a new tab in your default web browser displaying your Streamlit a
 --------------------
 Key Features and Components
 --------------------
+
 **Displaying Text**
 
 - `st.title("Title")` - Creates a large title.
@@ -121,5 +126,6 @@ Example: A Simple Data Dashboard
 --------------------
 Additional Resources
 --------------------
+
 - For further learning, refer to the official documentation: `Streamlit Docs <https://docs.streamlit.io/>`
 - For a concise overview, check out the cheat-sheet: `Streamlit Cheat Sheet <https://cheat-sheet.streamlit.app/>`
